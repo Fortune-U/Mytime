@@ -38,7 +38,7 @@ export default function Testimonies () {
                     <p className='t-p2'>Glow Spa</p>
                     <div>
                         <p className='t-p3'>Sarah L.Sarah L.</p>
-                        <p className='t-4'>━━ Owner of Glow Spa</p>
+                        <p className='t-4'>━━ Owner</p>
                     </div>
                 </main>
                 <aside>
@@ -49,7 +49,7 @@ export default function Testimonies () {
                     <p className='t-p2'>Radiant Beauty Skincare</p>
                     <div>
                         <p className='t-p3'>Emma R.</p>
-                        <p className='t-4'>━━ Owner of Radiant Beauty Skincare</p>
+                        <p className='t-4'>━━ Owner</p>
                     </div>
                 </main>
                 <aside>
