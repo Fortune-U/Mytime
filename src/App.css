@@ -148,6 +148,7 @@ margin: 5em 0em;
 
 .test-ctn{
   background-color: #000000 ;
+  padding: 0em 3em;
   
 }
 
@@ -159,6 +160,7 @@ margin: 5em 0em;
 
 .testimgs {
   display: flex;
+  flex-wrap: wrap;
   justify-content: space-between;
   padding: 1em 8em;
 }
@@ -226,7 +228,36 @@ aside{
   height: 300px;
   margin-bottom: 3em;
 }
+.carousel-item{
+  padding: 1em 3em;
+}
+.carousel-item , .carousel-item > main > div{
+  display: flex;
+  gap: 0.5em;
+}
 
+.t-p1{
+  font-size: 2.5em;
+  width: 60%;
+}
+
+.t-p2, .t-p3 , .t-4 {
+  color: #FFFFFF;
+}
+
+.t-p2{
+  font-size: 1.5em;
+}
+.t-4{
+
+}
+aside {
+  background-color: #000000;
+}
+aside > img {
+  border-radius: 1.5em;
+  background-color: #000000;
+}
 .feats2 > .ttl {
   font-weight: 500;
   font-size: 1.5em;
@@ -335,9 +366,48 @@ cursor: pointer;
 
 
 /* Media Queries */
-
+/* Laptop view  */
+@media (max-width: 1440px ) and (min-width: 1024px) {
+  .p1{
+    font-size: 2.25em;
+  }
+  .p2{
+    font-size: 1.25em;
+  }
+  .p3{
+    width: 40%;
+  }
+  .atm{
+    width: 70%;
+  }
+  .market-wrp{
+    padding: 2em 4em;
+  }
+  .disp2{
+    width: 70%;
+  }
+  .feats-ctn{
+    width: 90%;
+  }
+  .feats2{
+    width: 30%;
+  }
+  .disp3{
+    margin: 0em 2em;
+  }
+  
+  .t-p1{
+    font-size: 1.25em;
+    width: 100%;
+  }
+  
+  
+  .t-p2{
+    font-size: 1em;
+  }
+}
 /* Tablet view (between 768px and 1024px) */
-@media (max-width: 1024px) and (min-width: 768px) {
+@media (max-width: 1023px) and (min-width: 768px) {
   .hero {
     height: 60vh;
   }
@@ -392,6 +462,17 @@ cursor: pointer;
   .sec2 > ul {
     padding: 0;
   }
+  
+  .t-p1{
+    font-size: 1.25em;
+    width: 100%;
+  }
+  
+  
+  .t-p2{
+    font-size: 1em;
+  }
+  
 }
 
 /* Mobile view (below 768px) */
@@ -524,5 +605,173 @@ cursor: pointer;
     font-weight: 500;
     
     
+  }
+  
+  .t-p1{
+    font-size: 1.25em;
+    width: 100%;
+  }
+  
+  
+  .t-p2{
+    font-size: 1em;
+  }
+}
+
+
+@media (max-width:425px) {
+  .hero {
+    height: 80vh;
+  }
+  .Nav-bar {
+    flex-direction: column;
+    padding: 1em 2em;
+    
+  }
+
+  
+  
+  .area {
+    padding: 2em 2em;
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  .cnt{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .p1 {
+    font-size: 1.5em;
+    text-align: center;
+    width: 100%;
+  }
+  .p2 {
+    font-size: 0.75em;
+    width: 70%;
+    text-align: center;
+  }
+  .nav-btns{
+    align-items: center;
+    width: 70%;
+    
+  }
+
+  .p3{
+    margin-top: 2em;
+  }
+  .bkd {
+    width: 100%;
+    text-align: center;
+    font-size: 12px;
+    padding: 8px 2px ;
+  }
+  .sgn {
+    width: 100%;
+    text-align: center;
+    
+  }
+
+  .p4{
+    text-align: center;
+    font-size: 1.5em;
+  }
+  .p5{
+    font-size: 1em;
+  }
+  .p3, .feats2, .ad-box {
+    width: 100%;
+  }
+  .feats {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+
+  .test-ctn > div {
+    flex-direction: column;
+    padding: 1em 2em;
+  }
+  .testimgs {
+    flex-direction: column;
+    padding: 1em 2em;
+  }
+  .market-wrp {
+    padding: 1em 2em;
+  }
+  .atm {
+    font-size: 1.5em;
+    width: 100%;
+  }
+  .ad-box {
+    width: 100%;
+  }
+  .disp3 {
+    padding: 2em 2em;
+    margin: 0em 0.5em;
+  }
+  .tt {
+    font-size: 1.5em;
+    width: 100%;
+  }
+  .ttl{
+    text-align: center;
+  }
+  .tt2{
+    text-align: center;
+  }
+  .tt5 ,.tt2 {
+    width: 100%;
+  }
+  .testimgs{
+    display: none;
+  }
+  .testimgs > img {
+    width: 20%;
+    display: none;
+  }
+  .footer {
+    flex-direction: column;
+    padding: 1em 1em;
+  }
+  .sec1, .sec2, .sec3 {
+    align-items: center;
+    text-align: center;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.5);
+    gap: 1em;
+    padding: 1em 0em;
+  }
+  .sec2 > ul {
+    padding: 0;
+  }
+  .btm{
+    margin-top: 1em;
+    font-size: 12px;
+    font-weight: 500;
+    
+    
+  }
+  .carousel-item{
+    flex-direction: column;
+    padding: 0;
+    width: 100%;
+  }
+  
+ 
+  .test-ctn {
+    
+    padding: 0 1em;
+  }
+  
+  .t-p1{
+    font-size: 1em;
+    width: 120%;
+  }
+  
+  
+  .t-p2{
+    font-size: 1em;
   }
 }

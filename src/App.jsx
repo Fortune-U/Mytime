@@ -15,7 +15,7 @@ function App() {
     <>
    <Hero />
    <Ad/>
-   {/* <Testimonies /> */}
+   <Testimonies />
    <Market />
    <Adtwo />
    <Adthree />
