@@ -1,6 +1,7 @@
 import '../App.css'
 import React from "react";
 import { cn } from "@/lib/utils"
+import { useEffect } from 'react';
 //import { Icons } from "@/components/icons"
 import {
     NavigationMenu,
@@ -95,6 +96,20 @@ const components= [
 
 
 export default function Hero () {
+  useEffect(() => {
+    const handleScroll = () => {
+      const hero = document.querySelector('.hero');
+      if (hero) {
+        const scrollPosition = window.scrollY;
+        hero.style.backgroundPositionY = `${scrollPosition * 0.5}px`;
+      }
+    };
+
+    window.addEventListener('scroll', handleScroll);
+    return () => {
+      window.removeEventListener('scroll', handleScroll);
+    };
+  }, []);
     return(
         <div className='hero'>
             <div className='Nav-bar'>
