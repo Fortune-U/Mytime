@@ -681,6 +681,7 @@ cursor: pointer;
   }
   .p5{
     font-size: 1em;
+    width: 90%;
   }
   .p3, .feats2, .ad-box {
     width: 100%;
