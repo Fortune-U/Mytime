@@ -18,42 +18,79 @@ import logo from "../assets/image 21.png";
 
 const components= [
     {
-      title: "Alert Dialog",
+      title: "MyTime Booking Manager",
       href: "/docs/primitives/alert-dialog",
       description:
-        "A modal dialog that interrupts the user with important content and expects a response.",
+        "Streamline your appointment scheduling with MyTime Booking Manager. Effortlessly manage and schedule bookings with automated reminders and real-time updates, ensuring no appointments are missed and clients stay informed.",
     },
     {
-      title: "Hover Card",
+      title: "MyTime Client Relations",
       href: "/docs/primitives/hover-card",
       description:
-        "For sighted users to preview content available behind a link.",
+        "Enhance your client interactions with MyTime Client Relations. This tool helps you keep track of client preferences, histories, and communications, enabling personalized and efficient service.",
     },
     {
-      title: "Progress",
+      title: "MyTime POS (Point of Sale)",
       href: "/docs/primitives/progress",
       description:
-        "Displays an indicator showing the completion progress of a task, typically displayed as a progress bar.",
+        "Simplify transactions with MyTime POS. An integrated point of sale system that handles payments, invoicing, and receipts, all in one place.",
     },
     {
-      title: "Scroll-area",
+      title: "MyTime Staff Coordinator",
       href: "/docs/primitives/scroll-area",
-      description: "Visually or semantically separates content.",
+      description: "Optimize your workforce management with MyTime Staff Coordinator. Easily schedule shifts, track work hours, and manage staff availability.",
     },
     {
-      title: "Tabs",
+      title: "MyTime Marketing Suite",
       href: "/docs/primitives/tabs",
       description:
-        "A set of layered sections of content—known as tab panels—that are displayed one at a time.",
+        "Grow your business with MyTime Marketing Suite. Design and implement targeted marketing campaigns, track their effectiveness.",
     },
     {
-      title: "Tooltip",
+      title: "MyTime Analytics",
       href: "/docs/primitives/tooltip",
       description:
-        "A popup that displays information related to an element when the element receives keyboard focus or the mouse hovers over it.",
+        "Make data-driven decisions with MyTime Analytics. Access comprehensive reports and insights on your business performance.",
     },
   ]
 
+  const pricing= [
+    {
+      title: "Starter Plan $29/month",
+      href: "/docs/primitives/alert-dialog",
+      description:
+        "Ideal for small businesses just starting out. Includes basic features for booking management and client relations. Limited to 2 staff members and 50 bookings per month.",
+    },
+    {
+      title: "Basic Plan $59/month",
+      href: "/docs/primitives/hover-card",
+      description:
+        "Perfect for growing businesses. Offers advanced booking management, client relations, and POS integration. Supports up to 5 staff members and 200 bookings per month.",
+    },
+    {
+      title: "Professional Plan $99/month",
+      href: "/docs/primitives/progress",
+      description:
+        "Designed for established businesses needing comprehensive tools. Includes all Basic Plan features plus staff coordination and marketing suite. Supports up to 10 staff members and 500 bookings per month.",
+    },
+    {
+      title: "Business Plan $149/month",
+      href: "/docs/primitives/scroll-area",
+      description: "Tailored for larger businesses with extensive needs. Provides all Professional Plan features with added advanced analytics and custom reporting. Supports up to 20 staff members and 1,000 bookings per month.",
+    },
+    {
+      title: "Enterprise Plan $299/month",
+      href: "/docs/primitives/tabs",
+      description:
+        "For large enterprises requiring extensive customization and support. Includes all Business Plan features with priority support and unlimited staff and bookings. Customized features available upon request.",
+    },
+    {
+      title: "Pay-As-You-Go Plan",
+      href: "/docs/primitives/tooltip",
+      description:
+        "Flexible plan for businesses with fluctuating needs. Pay only for the features and usage you need each month. Ideal for seasonal businesses or those with unpredictable volumes.",
+    },
+  ]
   
 
 
@@ -77,26 +114,25 @@ export default function Hero () {
                     className="flex h-full w-full select-none flex-col justify-end rounded-md bg-gradient-to-b from-muted/50 to-muted p-6 no-underline outline-none focus:shadow-md"
                     href="/"
                   >
+                    <img src={logo} alt='' />
                     {/* <Icons.logo className="h-6 w-6" /> */}
                     <div className="mb-2 mt-4 text-lg font-medium">
                       Mytime
                     </div>
                     <p className="text-sm leading-tight text-muted-foreground">
-                      Beautifully designed components that you can copy and
-                      paste into your apps. Accessible. Customizable. Open
-                      Source.
+                    Revolutionize your Beauty salon and Spa Franchise Operations
                     </p>
                   </a>
                 </NavigationMenuLink>
               </li>
               <ListItem href="/docs" title="Introduction">
-                Re-usable components built using Radix UI and Tailwind CSS.
+              With MyTime, managing bookings, client relations, point of sale, staff coordination, and so much more just got a whole lot easier.
               </ListItem>
               <ListItem href="/docs/installation" title="Installation">
-                How to install dependencies and structure your app.
+                Get started on our web app.
               </ListItem>
-              <ListItem href="/docs/primitives/typography" title="Typography">
-                Styles for headings, paragraphs, lists...etc
+              <ListItem href="/docs/primitives/typography" title="Tools">
+              All the tools you need powered with automated workflows
               </ListItem>
             </ul>
           </NavigationMenuContent>
@@ -104,7 +140,7 @@ export default function Hero () {
         <NavigationMenuItem>
           <NavigationMenuTrigger>Products</NavigationMenuTrigger>
           <NavigationMenuContent>
-            <ul className="grid w-[400px] gap-3 p-4 md:w-[500px] md:grid-cols-2 lg:w-[600px] ">
+            <ul className="grid w-[340px] gap-3 p-4 md:w-[500px] md:grid-cols-2 lg:w-[600px] ">
               {components.map((component) => (
                 <ListItem
                   key={component.title}
@@ -120,8 +156,8 @@ export default function Hero () {
         <NavigationMenuItem>
           <NavigationMenuTrigger>Pricing</NavigationMenuTrigger>
           <NavigationMenuContent>
-            <ul className="grid w-[400px] gap-3 p-4 md:w-[500px] md:grid-cols-2 lg:w-[600px] ">
-              {components.map((component) => (
+            <ul className="grid w-[340px] gap-3 p-4 md:w-[500px] md:grid-cols-2 lg:w-[600px] ">
+              {pricing.map((component) => (
                 <ListItem
                   key={component.title}
                   title={component.title}

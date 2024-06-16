@@ -621,7 +621,7 @@ cursor: pointer;
 
 @media (max-width:425px) {
   .hero {
-    height: 80vh;
+    height: 100vh;
   }
   .Nav-bar {
     flex-direction: column;
@@ -775,3 +775,53 @@ cursor: pointer;
     font-size: 1em;
   }
 }
+
+
+
+/* animations  */
+/* Animations */
+@keyframes fadeIn {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}
+
+@keyframes slideInUp {
+  from { transform: translateY(100px); opacity: 0; }
+  to { transform: translateY(0); opacity: 1; }
+}
+
+/* Apply animations */
+.area {
+  animation: fadeIn 1.5s ease-in-out;
+}
+
+.p1, .p2 {
+  animation: slideInUp 1.5s ease-in-out;
+}
+
+/* Hover effects */
+.bkd:hover, .d-bkd:hover {
+  background-color: #000000;
+  color: #FFFFFF;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.sgn:hover, .p3:hover {
+  color: #28CC86;
+  transition: color 0.3s ease;
+}
+
+/* Parallax effect */
+.hero {
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+/* Smooth scroll */
+html {
+  scroll-behavior: smooth;
+}
+
+
